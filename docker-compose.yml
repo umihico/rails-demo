@@ -5,7 +5,7 @@ services:
     build: .
     volumes:
       - .:/demo
-    working_dir: /demo
     tty: true
+    command: ["rails", "server", "-b", "0.0.0.0"]
     ports:
       - "3000:3000"
