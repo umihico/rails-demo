@@ -5,6 +5,7 @@ services:
     build: .
     volumes:
       - .:/demo
+    working_dir: /demo
     tty: true
     ports:
       - "3000:3000"
