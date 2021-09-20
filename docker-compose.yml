@@ -5,7 +5,9 @@ services:
     build: .
     volumes:
       - .:/demo
-      - /demo/tmp
+      - /demo/sample_app/tmp
+      - /demo/hello_app/tmp
+      - /demo/toy_app/tmp
     tty: true
     command: ["rails", "server", "-b", "0.0.0.0"]
     ports:
