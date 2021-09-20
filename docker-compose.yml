@@ -5,6 +5,7 @@ services:
     build: .
     volumes:
       - .:/demo
+      - /demo/tmp
     tty: true
     command: ["rails", "server", "-b", "0.0.0.0"]
     ports:
